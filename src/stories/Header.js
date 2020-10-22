@@ -2,9 +2,9 @@ import React from "react";
 import MenuIcon from "@material-ui/icons/Menu";
 
 import "./Header.css";
-import { Button } from "@material-ui/core";
+import Button from "../Components/Button";
 
-function Header({ title }) {
+function Header({ title, primary }) {
   return (
     <div className="header">
       <div className="header__left">
@@ -15,7 +15,7 @@ function Header({ title }) {
       </div>
       {title && <h2>{title}</h2>}
       <div className="header__right">
-        <Button>Login</Button>
+        <Button primary>Login</Button>
         <Button>Register</Button>
       </div>
       <div className="header__right--mobile">

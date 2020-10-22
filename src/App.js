@@ -5,7 +5,7 @@ import Header from "./stories/Header";
 function App() {
   return (
     <div className="app">
-      <Header />
+      <Header primary title="React 2.0" />
     </div>
   );
 }
