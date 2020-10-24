@@ -1,18 +1,18 @@
-import React from 'react';
+import React from "react";
 
-import  Header  from './Header';
+import Header from "./Header";
 
 export default {
-  title: 'Component/Header',
-  component: Header
+  title: "Component/Header",
+  component: Header,
 };
 
 const Template = (args) => <Header {...args} />;
 
 export const Primary = Template.bind({});
-Primary.args = {
-};
+Primary.args = {};
 
-export const Secondary = Template.bind({});
-Secondary.args = {
+export const WithTitle = Template.bind({});
+WithTitle.args = {
+  title: "Team CP",
 };
