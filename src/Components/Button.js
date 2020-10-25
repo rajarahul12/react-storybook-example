@@ -1,6 +1,7 @@
+import { Button } from "@material-ui/core";
 import styled, { css } from "styled-components";
 
-const Button = styled.button`
+const StyledButton = styled.button`
   background: transparent;
   border-radius: 3px;
   border: 2px solid orange;
@@ -16,4 +17,9 @@ const Button = styled.button`
     `};
 `;
 
-export default Button;
+const MaterialButton = styled(Button)`
+  background-color: orange;
+`;
+
+export { MaterialButton };
+export default StyledButton;
